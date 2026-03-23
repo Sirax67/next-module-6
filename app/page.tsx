@@ -100,12 +100,12 @@ export default function CatalogPage() {
               placeholder="Название *"
               value={newProduct.name}
               onChange={e => setNewProduct({ ...newProduct, name: e.target.value })}
-              className="border-2 border-blue-200 shadow-md shadow-blue-100 rounded-xl p-2 focus:border-blue-400 outline-none"
+              className="border-2 border-blue-200 shadow-md shadow-blue-100 rounded-xl p-2 focus:border-blue-400 outline-none w-full"
             />
             {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
           </div>
           
-          <div className='w-full'>
+          <div>
             <input
               type="number"
               placeholder="Цена *"
